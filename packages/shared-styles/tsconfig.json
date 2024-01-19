@@ -1,0 +1,17 @@
+// packages/shared-styles/tsconfig.json
+{
+    "extends": "@repo/typescript-config/react-library.json",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "declaration": true, // Generate TypeScript declaration files
+        "outDir": "dist", // Specify the output directory for compiled files
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules", "dist"],
+}
