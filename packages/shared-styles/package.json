@@ -1,18 +1,19 @@
 {
-"name":"@repo/shared-styles", 
-"version": "0.0.0", 
-"main": "index.ts", 
-"types": "index.d.ts",
- "private": true,
-  "exports": {
-    "./button.css" : "./button.css"
-  }, 
-"dependencies": {}, 
-"devDependencies": {}, 
-"scripts":{
-"test": "echo \"Error: no test specified\" && exit 1"
-}, 
-"keywords": [], 
-"author": "", 
-"license": "ISC"
+    "name": "@repo/shared-styles",
+    "version": "0.0.0",
+    "main": "index.ts",
+    "types": "index.d.ts",
+    "private": true,
+    "exports": {
+        "./button.css": "./button.css",
+        "./global.css": "./global.css"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
