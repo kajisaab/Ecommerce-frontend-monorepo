@@ -1,15 +1,13 @@
 import { Button } from '@repo/ui/button';
-import './App.css';
 import '@repo/shared-styles/button.css';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
     return (
-        <>
-            <Button className='button__class' appName='Aman'>
-                Click me
-            </Button>
-            <button className='button__style'>Click</button>
-        </>
+        <Routes>
+            <Route path='/' element={<div>Home Page</div>} />
+            <Route path='/contact' element={<div>Contact</div>} />
+        </Routes>
     );
 }
 
