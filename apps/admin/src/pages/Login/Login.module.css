@@ -1,0 +1,76 @@
+.login__wrapper {
+    display: flex;
+    align-items: center;
+    height: 100dvh;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--body-color);
+}
+
+.login__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 50px;
+    height: 55vh;
+    width: auto;
+    overflow: hidden;
+    background: #343637;
+    box-shadow:
+        17px 17px 34px #2c2e2f,
+        -17px -17px 34px #3c3e3f;
+}
+
+.login__container__title {
+    font-size: clamp(14px, 24px, 32px);
+}
+
+.input__container__group {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.input__container > input {
+    border: none;
+    border-bottom: 0.125rem solid #fff;
+    width: 100%;
+    background: transparent;
+    height: 3rem;
+    font-size: 1.0625rem;
+    padding-left: 0.875rem;
+    line-height: 147.6%;
+    padding-top: 1.82rem;
+    padding-bottom: 0.5rem;
+}
+
+.input__container > input:focus {
+    outline: none;
+}
+
+.label__section {
+    position: absolute;
+    top: 0.9375rem;
+    left: 0.875rem;
+    line-height: 147.6%;
+    transition: top 0.2s;
+}
+
+.input__container > input:focus + .label__section,
+.input__container > input:active + .label__section,
+.input__container > input:valid + .label__section {
+    top: 0;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.button__container {
+    width: 100%;
+}
+
+.button__class {
+    width: 100%;
+}

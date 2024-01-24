@@ -5,23 +5,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ccc;
+    color: #f6f5f7;
 }
 
 :root {
-    --body-color: #18191a;
+    --body-color: #343637;
     --sidebar-color: #242526;
+    --primary-text-color: #f6f5f7;
     --primary-color: #3a3b3c;
     --primary-color-light: #404042;
     --primary-header--color: #404042;
     --toggle-color: #fff;
-    --text-color: #f0f1f0;
+    --text-color: #f6f5f7;
     --secondary--text--color: #abaaab;
     --tertiary--text--color: #3ea7fe;
     --primary--button--bg: #242630;
     --primary--button--hover: #454544;
-    --primary--button--text: #f0f1f0;
-    --light--filled--button--bg: #f0f1f0;
+    --primary--button--text: #f6f5f7;
+    --light--filled--button--bg: #f6f5f7;
     --light--filled--button--hover: #d8d8d9;
     --light--filled--button--text: #0e0e0f;
     --dark--filled--button--bg: #212121;
@@ -42,26 +43,11 @@
     --tran-05: all 0.5s ease;
 }
 
-body,
-.body__wrapper {
+body {
     width: 100%;
     height: 100vh;
     -webkit-font-smoothing: antialiased;
     background: var(--body-color);
-}
-
-.main__content__wrapper {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-}
-
-.main__content__container {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 .primary__button {
@@ -69,11 +55,32 @@ body,
     color: var(--primary--button--text);
     padding: 8px 24px;
     outline: none;
+    width: 100%;
+    font-size: clamp(18px, 2vmin, 32px);
     border: 0;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
+    transition:
+        transform,
+        0.2s ease,
+        box-shadow 0.5s ease;
+    transform: scale(0.95);
+    box-shadow: inset 20px 15px 20px var(--primary--button--hover);
 }
 
 .primary__button:hover {
-    background-color: var(--primary--button--hover);
+    box-shadow: inset 20px 45px 20px var(--primary--button--hover);
+    transform: scale(1);
+}
+
+.primary__button:active {
+    transform: scale(0.95);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
 }
