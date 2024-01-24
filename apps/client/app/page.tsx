@@ -1,11 +1,10 @@
-import Image from 'next/image';
 import styles from './page.module.css';
-import '@repo/shared-styles/button.css';
+import { Button } from '@repo/ui/button';
 
 export default function Home() {
     return (
         <main className={styles.main}>
-            <button className='button__style'>Click</button>
+            <Button>Click me</Button>
         </main>
     );
 }

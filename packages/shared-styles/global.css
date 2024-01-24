@@ -18,7 +18,7 @@
     --text-color: #f0f1f0;
     --secondary--text--color: #abaaab;
     --tertiary--text--color: #3ea7fe;
-    --primary--button--bg: #3c3d3c;
+    --primary--button--bg: #242630;
     --primary--button--hover: #454544;
     --primary--button--text: #f0f1f0;
     --light--filled--button--bg: #f0f1f0;
@@ -44,8 +44,6 @@
 
 body,
 .body__wrapper {
-    display: flex;
-    align-items: flex-start;
     width: 100%;
     height: 100vh;
     -webkit-font-smoothing: antialiased;
