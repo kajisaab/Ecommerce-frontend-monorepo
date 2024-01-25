@@ -10,7 +10,6 @@ function App() {
         isAuthenticated ? PrivateRoute() : {},
         ...PublicRoute(),
     ]);
-    console.log({ router });
     return <RouterProvider router={router} />;
 }
 

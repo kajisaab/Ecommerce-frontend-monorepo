@@ -1,0 +1,14 @@
+.header__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    box-shadow: -2px 12px 25px -12px rgba(74, 74, 74, 1);
+    -webkit-box-shadow: -2px 12px 25px -12px rgba(74, 74, 74, 1);
+    -moz-box-shadow: -2px 12px 25px -12px rgba(74, 74, 74, 1);
+}
+
+.header__left__container img{ 
+    cursor: pointer;
+}
