@@ -3,6 +3,7 @@ import { LayoutPropsInterface } from './LayoutInterface';
 import styles from './Layout.module.css';
 import Sidebar from './Sidebar';
 import Header from './Header';
+import { Outlet } from 'react-router-dom';
 
 const Layout: React.FC<LayoutPropsInterface> = () => {
     return (
@@ -10,9 +11,8 @@ const Layout: React.FC<LayoutPropsInterface> = () => {
             <Header />
             <div className={styles.content__section}>
                 <Sidebar />
-
                 <div className={styles.content__wrapper}>
-                    Childrens will be here
+                    <Outlet />
                 </div>
             </div>
         </section>

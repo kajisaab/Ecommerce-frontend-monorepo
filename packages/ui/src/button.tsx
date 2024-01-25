@@ -37,6 +37,7 @@ export const ButtonComponent = styled.button<ButtonPropsInterface>`
     background-color: var(--primary--button--bg);
     color: var(--primary--button--text);
     padding: 8px 24px;
+    width: 100%;
     outline: none;
     font-size: ${(props) => `clamp(18px, ${props.fontSize}, 32px)`};
     border: 0;

@@ -1,21 +1,17 @@
 import '@repo/shared-styles/button.css';
-import { Route, Routes } from 'react-router-dom';
-import PageNotFound from '@repo/ui/404Page';
-import React from 'react';
-import Login from './pages/Login';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import PrivateRoute from './routes/PrivateRoute';
+import PublicRoute from './routes/PublicRoute';
 
 function App() {
-    return (
-        <React.Suspense fallback={<span>Loading ....</span>}>
-            <Routes>
-                <Route path='/'>
-                    <Route index element={<Login />} />
-                </Route>
-                <Route path='/contact' element={<div>Contact</div>} />
-                <Route path='*' element={<PageNotFound />} />
-            </Routes>
-        </React.Suspense>
-    );
+    const isAuthenticated = true;
+    //Combine and conditionally include routes based on authentication status
+    const router = createBrowserRouter([
+        isAuthenticated ? PrivateRoute() : {},
+        ...PublicRoute(),
+    ]);
+    console.log({ router });
+    return <RouterProvider router={router} />;
 }
 
 export default App;
